@@ -1,0 +1,37 @@
+安装易邮服务器
+
+修改 工具 服务器设置 estore.com
+
+新建两个账户 aaa 111/ bbb 111
+
+telnet localhost 25
+---------------------------------
+ehlo xxx
+auth login 
+
+YWFh
+MTEx
+
+mail from:<aaa@estore.com>
+rcpt to:<bbb@estore.com>
+
+data
+
+from:<aaa@estore.com>
+to:<bbb@estore.com>
+subject:表白
+
+凤姐！ 我喜欢你 。。。。。! ....
+
+.
+
+quit
+---------------------------------
+telnet localhost 110
+
+user bbb
+pass 111
+stat
+retr 2
+quit
+
